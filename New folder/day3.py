@@ -1,126 +1,172 @@
-# Day 3 — Loops (for & while)
+# # Day 3 — Loops (for & while)
 
-# for loop
-for i in range(6):
-    print("Kaleemullah")
-
-
-for num in range(1,10):
-    print(num)
+# # for loop
+# for i in range(6):
+#     print("Kaleemullah")
 
 
-# — Multiplication Table
-number = int(input("Enter a number : "))
-
-for t in range(1,11):
-    print(number," x ",t," = ",t*number)
+# for num in range(1,10):
+#     print(num)
 
 
-# while Loop
-count = 1
-while count < 10:
-    print(count)
-    count += 1
+# # — Multiplication Table
+# number = int(input("Enter a number : "))
+
+# for t in range(1,11):
+#     print(number," x ",t," = ",t*number)
 
 
-# — User Password System
-password = ""
-while password != "kaleem123":
-    password = input("Enter your password :")
-print("Access Granted")
-
-# — Countdown Timer
-
-count = 10
-while count > 0:
-    print(count)
-    count -= 1
-print("Time's up!")    
+# # while Loop
+# count = 1
+# while count < 10:
+#     print(count)
+#     count += 1
 
 
-# Practice Program 1 — Even Numbers
-num = 0
-while num <=20:
-    print(num)
-    num += 2
+# # — User Password System
+# password = ""
+# while password != "kaleem123":
+#     password = input("Enter your password :")
+# print("Access Granted")
+
+# # — Countdown Timer
+
+# count = 10
+# while count > 0:
+#     print(count)
+#     count -= 1
+# print("Time's up!")    
 
 
-# with input Practice Program 1
-a = int(input("Enter a number:"))
-num = 0
-while num <=a:
-    print(num)
-    num += 2
-print("Done")
+# # Practice Program 1 — Even Numbers
+# num = 0
+# while num <=20:
+#     print(num)
+#     num += 2
 
 
-# Practice Program 2 — Odd Numbers
-a = int(input("Enter a number:"))
-num = 1
-while num <= a:
-    print(num)
-    num += 2
-
-# Practice Program 3 — Sum of Numbers
-count = 1
-total = 0
-
-while count <= 100:
-    # print(count)
-    count += 1
-    total = total + count #or total += count
-print("Your total =", total)
+# # with input Practice Program 1
+# a = int(input("Enter a number:"))
+# num = 0
+# while num <=a:
+#     print(num)
+#     num += 2
+# print("Done")
 
 
-# Practice Program 4 — Guessing Game
-secret = 5
-guess = 0
+# # Practice Program 2 — Odd Numbers
+# a = int(input("Enter a number:"))
+# num = 1
+# while num <= a:
+#     print(num)
+#     num += 2
 
-while guess != secret:
-    guess =int(input("Enter Guess number:"))    
-print("Correct guess")
+# # Practice Program 3 — Sum of Numbers
+# count = 1
+# total = 0
 
-
-# Challenge 2
-# Take numbers from user and calculate total UNTIL user enters 0.
-n = 1
-total = 0
-while n != 0:
-    n = int(input("Enter a number:"))
-    print(" ADD another, for result enter 0")
-    total += n
-print("Your total sum is",total)
+# while count <= 100:
+#     # print(count)
+#     count += 1
+#     total = total + count #or total += count
+# print("Your total =", total)
 
 
+# # Practice Program 4 — Guessing Game
+# secret = 5
+# guess = 0
 
-# Challenge 3
-# Create login system:
-# ask username/password repeatedly
-# stop when correct
-username = ""
-password = ""
-while username != "qamar":
-    username = input("Enter username: ")
-while password != "qe":
-    password = input("Enter password: ")
-print("Login Successfully")
+# while guess != secret:
+#     guess =int(input("Enter Guess number:"))    
+# print("Correct guess")
 
 
-##Move to for loop
-# Challange - 1 Take a number from user and print its table.
-num = int(input("enter number:"))
-
-for i in range (1,11):
-    print(num," x ",i," = ",num * i)
-
-
-# Challenge 2 — Sum of Even Numbers
-sum = 0
-for i in range (2,101,2):
-    sum+=i
-print(sum)
+# # Challenge 2
+# # Take numbers from user and calculate total UNTIL user enters 0.
+# n = 1
+# total = 0
+# while n != 0:
+#     n = int(input("Enter a number:"))
+#     print(" ADD another, for result enter 0")
+#     total += n
+# print("Your total sum is",total)
 
 
-# Challenge 3 — Star Pattern
-for s in range (1,6):
-    print("*" * s)
+
+# # Challenge 3
+# # Create login system:
+# # ask username/password repeatedly
+# # stop when correct
+# username = ""
+# password = ""
+# while username != "qamar":
+#     username = input("Enter username: ")
+# while password != "qe":
+#     password = input("Enter password: ")
+# print("Login Successfully")
+
+
+# ##Move to for loop
+# # Challange - 1 Take a number from user and print its table.
+# num = int(input("enter number:"))
+
+# for i in range (1,11):
+#     print(num," x ",i," = ",num * i)
+
+
+# # Challenge 2 — Sum of Even Numbers
+# sum = 0
+# for i in range (2,101,2):
+#     sum+=i
+# print(sum)
+
+
+# # Challenge 3 — Star Pattern
+# for s in range (1,6):
+#     print("*" * s)
+
+
+# #  Main project ATM System
+
+# balance = 0
+
+# while True:
+#     print("")
+#     print(" 1 for Deposit")
+#     print(" 2 for Withdrae")
+#     print(" 3 for check Balance")
+#     print(" 4 for Exit")
+#     print("")
+
+#     num = int(input("Enter a number to continue:"))
+#     print("You Entered ",num)
+#     print("")
+
+#     if num == 1:
+#         deposit = int(input("Enter Deposit Amount:"))
+#         balance += deposit
+#         print("Your balance is ",balance)
+
+#     elif num == 2:
+#         withdraw = int(input("Enter Withdrawal Amount:"))
+#         if withdraw <= balance:
+#             balance -= withdraw
+#             print("Withdrawal Successfully")
+#             print("Your balance is ",balance)
+#         else:
+#             print("Insufficient Balance")
+#             print("Your balance is ",balance)
+
+#     elif num == 3:
+#         print("Your balance is ",balance)
+
+#     elif num == 4:
+#         print("Thank you for using Qamar ATM")
+#         break
+   
+#     else:
+#         print("Invalid input")
+
+
+
+
